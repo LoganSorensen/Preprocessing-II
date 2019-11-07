@@ -1,1 +1,22 @@
 // Mixins in here
+.buttonStyle(@background, @color) {
+    background-color: @background;
+    color: @color;
+    width: 85%;
+    border-radius: 15px;
+    height: 17%;
+    font-size: 1.8rem;
+
+    &:hover {
+        cursor: pointer;
+        color: @button-bg;
+        background-color: white;
+    }
+}
+
+.imageGrow(@transform) {
+    &:hover {
+        transform: @transform;
+        transition: all 0.3s ease;
+    }
+}
