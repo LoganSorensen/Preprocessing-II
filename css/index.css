@@ -183,6 +183,13 @@ nav {
     padding: 2% 0;
   }
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+}
 nav .linkCont {
   width: 40%;
   display: flex;
@@ -194,6 +201,12 @@ nav .linkCont {
     width: 100%;
     justify-content: space-around;
     padding-top: 2%;
+  }
+}
+@media (max-width: 768px) {
+  nav .linkCont {
+    width: 90%;
+    padding: 2% 0;
   }
 }
 nav a {
@@ -229,12 +242,32 @@ header img {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  header img {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  header img {
+    width: 90%;
+  }
+}
 header .headerText {
   display: flex;
   flex-direction: column;
   width: 42%;
 }
 @media (max-width: 500px) {
+  header .headerText {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  header .headerText {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
   header .headerText {
     width: 90%;
   }
@@ -261,6 +294,11 @@ header .headerText p {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
+    padding: 0 5%;
+  }
+}
+@media (max-width: 768px) {
+  .home .content-section {
     padding: 0 5%;
   }
 }
@@ -337,6 +375,11 @@ header .headerText p {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .home .content-pick {
+    padding: 2% 5%;
   }
 }
 .home .content-pick .destination {
