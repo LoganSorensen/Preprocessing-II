@@ -240,7 +240,7 @@ header .headerText {
   }
 }
 header .headerText h2 {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 header .headerText p {
   width: 100%;
@@ -351,8 +351,8 @@ header .headerText p {
 .home .btn {
   background-color: #17A2B8;
   color: white;
-  width: 80%;
-  border-radius: 8px;
+  width: 85%;
+  border-radius: 15px;
   height: 5vh;
   font-size: 1.8rem;
 }
