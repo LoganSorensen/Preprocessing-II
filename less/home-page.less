@@ -6,16 +6,37 @@ header {
 
   img {
     width: 42%;
+
+    @media @phone {
+      width: 90%;
+    }
   }
 
-  h2 {
-    padding-top: 5%;
-  }
-
-  p {
+  .headerText {
+    display: flex;
+    flex-direction: column;
     width: 42%;
-    border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      width: 90%;
+    }
+
+    h2 {
+      padding-top: 5%;
+    }
+  
+    p {
+      width: 100%;
+      border-bottom: 2px dashed @navigation-border;
+  
+      @media @phone {
+        width: 100%;
+        padding: 1% 0 3%;
+      }
+    }
   }
+
+  
 }
 
 .home {
@@ -26,19 +47,34 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+   @media @phone {
+     flex-direction: column;
+     padding: 0 5%;
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
@@ -46,6 +82,12 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+        
+    }
 
     .text-content {
       padding-left: 1%;
@@ -55,12 +97,22 @@ header {
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+       width: 100%; 
+       display: flex;
+       justify-content: center;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone {
+       width: 90%; 
+    }
 
     img {
       border-radius: 10px;
@@ -73,13 +125,26 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+     flex-direction: column; 
+     align-items: center; 
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 75%;
+      }
     }
   }
 
   .btn {
     .buttonStyle();
+
+    @media @phone {
+      width: 95%;  
+    }
   }
 }// home
