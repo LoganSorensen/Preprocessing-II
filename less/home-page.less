@@ -7,7 +7,7 @@ header {
   img {
     width: 42%;
 
-    @media @phone {
+    @media @mobile {
       width: 90%;
     }
 
@@ -25,7 +25,7 @@ header {
     flex-direction: column;
     width: 42%;
 
-    @media @phone {
+    @media @mobile {
       width: 90%;
     }
 
@@ -45,7 +45,7 @@ header {
       width: 100%;
       border-bottom: 2px dashed @navigation-border;
   
-      @media @phone {
+      @media @mobile {
         width: 100%;
         padding: 1% 0 3%;
       }
@@ -63,7 +63,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   @media @phone {
+   @media @mobile {
      flex-direction: column;
      padding: 0 5%;
    }
@@ -76,7 +76,7 @@ header {
       width: 48%;
       padding-right: 1%;
 
-      @media @phone {
+      @media @mobile {
         width: 100%;
       }
     }
@@ -84,15 +84,16 @@ header {
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .imageGrow(scale(1.2));
 
-      @media @phone {
+      @media @mobile {
         width: 100%;
       }
 
       img {
         border-radius: 10px;
 
-        @media @phone {
+        @media @mobile {
           width: 100%;
         }
       }
@@ -103,7 +104,7 @@ header {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media @phone {
+    @media @mobile {
       display: flex;
       flex-direction: column-reverse;
         
@@ -118,7 +119,7 @@ header {
       padding-right: 1%;
       padding-left: 0;
 
-      @media @phone {
+      @media @mobile {
        width: 100%; 
        display: flex;
        justify-content: center;
@@ -130,12 +131,13 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
-    @media @phone {
+    @media @mobile {
        width: 90%; 
     }
 
     img {
       border-radius: 10px;
+      .imageGrow(scale(1.1));
     }
   }
 
@@ -145,7 +147,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    @media @phone {
+    @media @mobile {
      flex-direction: column; 
      align-items: center; 
     }
@@ -158,16 +160,16 @@ header {
       width: 30%;
       margin-bottom: 30px;
 
-      @media @phone {
+      @media @mobile {
         width: 75%;
       }
     }
   }
 
   .btn {
-    .buttonStyle();
+    .buttonStyle(@button-bg, white);
 
-    @media @phone {
+    @media @mobile {
       width: 95%;  
     }
   }
